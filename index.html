@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first-container{
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://www.omnifood.net/resources/CSS/img/hero-min.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        #logo-and-menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        #logo-and-menu img{
+            width: 100px;
+            height: 100px;
+            color: white;
+        }
+        #logo-and-menu .menu{
+            text-transform: uppercase;
+            color: white;
+            padding: 8px;
+            cursor: pointer;
+        }
+        #logo-and-menu a{
+            margin-top: 42px;
+            color: white;
+            text-decoration: none;
+            padding-top: 50px;
+            padding-left: 28px;
+            padding-bottom: 40px;
+            padding-right: 20px;
+        }
+        #title h1{
+            text-align: left;
+            padding-top: 100px;
+            padding-bottom: 10px;
+            padding-left: 70px;
+            padding-right: 30px;
+            font-weight: 150;
+            font-size: 50px;
+            text-transform: uppercase;
+            color: white;
+        }
+        #button{
+            padding-left: 70px;
+        }
+        #button .button.primary {
+            color: white;
+            background: #e67e22;
+            border: 2px solid #e67e22;
+            border-radius: 99px;
+            padding: 20px;
+            cursor: pointer;
+            font-size: 14.5px;
+        }
+        #button .button.secondary {
+            color: #e67e22;
+            background: transparent;
+            border: 2px solid #e67e22;
+            padding: 20px;
+            border-radius: 99px;
+            font-size: 14.5px;
+        }
+        .footfat{
+            margin: auto;
+        }
+        .foodfat h1{
+            text-transform: uppercase;
+            font-size: 30px;
+            text-align: center;
+        }
+        .foodfat p{
+            padding: 20px;
+            text-align: center;
+        }
+        .parts{
+            display: flex;
+        }
+        .parts h3{
+            font-weight: 100;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        .parts p{
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+ <div id="first-container">
+    <header id="logo-and-menu">
+        <img src="http://www.omnifood.net/resources/CSS/img/logo.png" alt="">
+        <div class="menu">
+                <a href=""> Food Delivery</a>
+                <a href="">Home It Works</a>
+                <a href="">Our Cities</a>
+                <a href="">Sign up</a>
+        </div>
+    </header>
+    <section>
+        <div id="title">
+            <h1>Goodbye junk food. <br> Hello supper healthy meals.</h1>
+        </div>
+        <div id="button">
+            <button class="button primary">
+                I'm hungry
+            </button>
+            <button class="button secondary">
+                Show me more
+            </button>
+        </div>
+    </section>
+</div>
+    <section>
+        <div class="foodfat">
+            <h1>
+                Get food fat - Not fat food
+            </h1>
+            <p>Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. <br> No time for cooking. So let us take care of that, we're really good at it, we promise! </p>
+        </div>
+        <div class="parts">
+            <div>
+                <h3>Up to 365 days/year</h3>
+                <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.</p>
+            </div>
+            <div>
+                <h3>Ready in 20 minutes</h3>
+                <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.</p>
+            </div>
+            <div>
+                <h3>100% organic</h3>
+                <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!</p>
+            </div>
+            <div>
+                <h3>Order anything</h3>
+                <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
