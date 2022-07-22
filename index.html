@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            font-family: 'Cormorant SC', serif;
+
+        }
         #first-container{
             height: 100vh;
             width: 100%;
@@ -22,6 +26,7 @@
             padding-bottom: 10px;
             padding-left: 100px;
             padding-right: 100px;
+            position: fixed;
         }
         #logo-and-menu img{
             width: 100px;
@@ -45,7 +50,7 @@
         }
         #title h1{
             text-align: left;
-            padding-top: 100px;
+            padding-top: 324px;
             padding-bottom: 10px;
             padding-left: 70px;
             padding-right: 30px;
@@ -83,7 +88,7 @@
             text-align: center;
         }
         .foodfat p{
-            padding: 20px;
+            gap: 24px;
             text-align: center;
         }
         .parts{
@@ -96,6 +101,128 @@
         }
         .parts p{
             padding-right: 15px;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding-top: 48px;
+        }
+        .grid img{
+            width: 324px;
+            height: auto;
+        }
+        .cities{
+            text-align: center;
+            padding-top: 65px;
+            padding-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        .place-to-eat{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .place-to-eat img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-style: none;
+        }
+        .place-to-eat h3{
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .place-to-eat p{
+            font-size: 18px;
+        }
+        .place-to-eat a{
+            font-size: 18px;
+            color: #e67e22;
+            text-decoration: none;
+            padding-bottom: 1px;
+            border-bottom: 1px solid #e67e22;
+        }
+        .cost{
+            display: flex;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f4f4f4;
+            justify-content: space-between;
+            padding: 150px;
+        }
+        .cost .premium .price1{
+            margin-bottom: 10px;
+            font-weight: 100;
+            color: #e67e22;
+            font-size: 260%;
+            display: table;
+        }
+        .cost .premium .price1 span{
+            font-size: 20px;
+        }
+        .cost .premium p{
+            font-size: 20px;
+        }
+        .cost .button{
+            padding-left: 70px;
+        }
+        .cost .button .btn-primary{
+            color: white;
+            background: #e67e22;
+            border: 2px solid #e67e22;
+            border-radius: 99px;
+            padding: 20px;
+            cursor: pointer;
+            font-size: 14.5px;
+        }
+        .cost .pro .price2{
+            margin-bottom: 10px;
+            font-weight: 100;
+            color: #e67e22;
+            font-size: 260%;
+        }
+        .cost .pro .price2 span{
+            font-size: 20px;
+        }
+        .cost .pro p{
+            font-size: 20px;
+        }
+        .cost .button2{
+            padding-left: 70px;
+        }
+        .cost .button2 .btn-secondary{
+            color: #e67e22;
+            background: transparent;
+            border: 2px solid #e67e22;
+            padding: 20px;
+            border-radius: 99px;
+            font-size: 14.5px;
+        }
+        .cost .starter .price3{
+            margin-bottom: 10px;
+            font-weight: 100;
+            color: #e67e22;
+            font-size: 260%;
+        }
+        .cost .starter .price3 span{
+            font-size: 20px;
+        }
+        .cost .starter p{
+            font-size: 20px;
+        }
+        .cost .button3{
+            padding-left: 70px;
+        }
+        .cost .button3 .btn-secondary{
+            color: #e67e22;
+            background: transparent;
+            border: 2px solid #e67e22;
+            padding: 20px;
+            border-radius: 99px;
+            font-size: 14.5px;
         }
     </style>
 </head>
@@ -150,6 +277,91 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="grid">
+            <img src="http://www.omnifood.net/resources/images/1.jpg" alt="">
+            <img src="http://www.omnifood.net/resources/images/2.jpg" alt="">
+            <img src="http://www.omnifood.net/resources/images/3.jpg" alt="">
+            <img src="http://www.omnifood.net/resources/images/4.jpg" alt="">
 
+            <img src="http://www.omnifood.net/resources/images/5.jpg" alt="">
+            <img src="http://www.omnifood.net/resources/images/6.jpg" alt="">
+            <img src="http://www.omnifood.net/resources/images/7.jpg" alt="">
+            <img src="http://www.omnifood.net/resources/images/8.jpg" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="cities">
+            <h1>We're currently in these cities</h2>
+        </div>
+        <div class="place-to-eat">
+            <div>
+                <img src="http://www.omnifood.net/resources/images/lisbon-3.jpg" alt="">
+                <h3>Lisbon</h3>
+                <p>1600+ happy eaters</p>
+                <p>60+ top chefs</p>
+                <a href="">@omnifood ix</a>
+            </div>
+            <div>
+                <img src="http://www.omnifood.net/resources/images/san-francisco.jpg" alt="">
+                <h3>San Francisco</h3>
+                <p>3700+ happy eaters</p>
+                <p>160+ top chefs</p>
+                <a href="">@omnifood_sf</a>
+            </div>
+            <div>
+                <img src="http://www.omnifood.net/resources/images/berlin.jpg" alt="">
+                <h3>Berlin</h3>
+                <p>2300+ happy eaters</p>
+                <p>110+ top chefs</p>
+                <a href="">@omnifood_berlin</a>
+            </div>
+            <div>
+                <img src="http://www.omnifood.net/resources/images/london.jpg" alt="">
+                <h3>London</h3>
+                <p>1200+ happy eaters</p>
+                <p>50+ top chefs</p>
+                <a href="">@omnifood_london</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="cost">
+            <div class="premium">
+                    <h2>PREMIUM</h2>
+                    <p class="price1">"$399" <span>/ month</span></p>
+                    <p>That's only 13.30$ per meal</p>
+                    <p>1 meal every day</p>
+                    <p>Order 24/7</p>
+                    <p>Access to newest creations</p>
+                    <p>Free delivery</p>
+                    <div class="button">
+                        <button class="btn-primary">Sign up now</button>
+                    </div>
+            </div>
+            <div class="pro">
+                    <h2>PRO</h2>
+                    <p class="price2">"$149" <span>/ month</span></p>
+                    <p>That's only 14.90$ per meal</p>
+                    <p>1 meal 10 days/month</p>
+                    <p>Order 24/7</p>
+                    <p>Access to newest creations</p>
+                    <p>Free delivery</p>
+                <div class="button2">
+                        <button class="btn-secondary">Sign up now</button>
+                </div>
+            </div>
+            <div class="starter">
+                    <h2>STARTER</h2>
+                    <p class="price3">"19$ " <span>/ month</span></p>
+                    <p>1 meal</p>
+                    <p>Order from 8 am to 12 pm</p>
+                    <p>Free delivery</p>
+                <div class="button3">
+                        <button class="btn-secondary">Sign up now</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
