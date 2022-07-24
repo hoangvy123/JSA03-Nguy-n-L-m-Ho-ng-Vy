@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
+    <title>Bài kiểm tra JSA03 -Nguyễn Lâm Hoàng Vy-</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Cormorant SC', serif;
+        }
+        .background{
+            height: 100vh;
+            width: 100%;
+            background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://khuchieunghi.github.io/JSA03-khuchieunghi/public/background.png);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .title{
+            text-align: center;
+            padding-top: 240px;
+            color: aliceblue;
+            font-size: 26px;
+        }
+        #button{
+            text-align: center;
+        }
+        #button .btn-primary{
+            color: rgb(82, 78, 78);
+            background-color: rgb(255, 190, 0);
+            border: 5px solid rgb(255, 190, 0);
+            padding: 26px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .grid img{
+            width: 328px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="clock">
+            <div>
+                <span id="hour"></span>
+            </div>
+            <div>
+                <span id="minute"></span>
+            </div>
+            <div>
+                <span id="second"></span>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Xây dựng không gian sống tiêu chuẩn dành cho giới trẻ</h1>
+            <p>Điều kiện sống chất lượng với nhiều ưu điểm nổi bật</p>
+        </div>
+        <div id="button">
+            <button class="btn-primary"> Bạn muốn khám phá</button>
+        </div>
+    </div>
+    <div class="grid">
+        <img src="https://khuchieunghi.github.io/JSA03-khuchieunghi/public/1.jpeg">
+        <img src="https://khuchieunghi.github.io/JSA03-khuchieunghi/public/2.jpeg">
+        <img src="https://khuchieunghi.github.io/JSA03-khuchieunghi/public/3.jpeg">
+        <img src="https://khuchieunghi.github.io/JSA03-khuchieunghi/public/4.jpeg">
+
+        <img src="https://khuchieunghi.github.io/JSA03-khuchieunghi/public/5.jpeg">
+        <img src="https://khuchieunghi.github.io/JSA03-khuchieunghi/public/6.jpeg">
+        <img src="https://khuchieunghi.github.io/JSA03-khuchieunghi/public/7.jpeg">
+        <img src="https://khuchieunghi.github.io/JSA03-khuchieunghi/public/8.jpeg">
+    </div>
+</body>
+</html>
