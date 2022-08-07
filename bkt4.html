@@ -95,7 +95,18 @@
             padding-top: 20px;
             text-align: center;
         }
-
+        #btn-box{
+            padding-top: 20px;
+        }
+        #btn-box .buttn{
+            background-color: rgb(175, 0, 255);
+            border: 5px solid rgb(175, 00, 255);
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -144,8 +155,12 @@
     </div>
     <div class="login">
         <h1>Nhập thông tin</h1>
-        Tên <input type="text" id="name" name="ten">
-        Tuổi <input type="text" id="age" name="tuoi">
+        Tên <input type="text" id="name" name="ten" placeholder="Nhập tên">
+        Tuổi <input type="text" id="age" name="tuoi" placeholder="Nhập tuổi">
+        <div id="btn-box">
+            <button class="buttn">
+                Gửi
+            </button>
     </div>
 </body>
 </html>
