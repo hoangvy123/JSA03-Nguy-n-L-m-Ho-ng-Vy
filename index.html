@@ -4,364 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Document</title>
+    <script type="text/javascript" src="./script.js"> </script>
     <style>
-        *{
-            font-family: 'Cormorant SC', serif;
-
+        #clock {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 24px;
         }
-        #first-container{
+        .background{
             height: 100vh;
             width: 100%;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://www.omnifood.net/resources/CSS/img/hero-min.jpg');
+            background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://khuchieunghi.github.io/JSA03-khuchieunghi/public/background.png);
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-        }
-        #logo-and-menu{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 100px;
-            padding-right: 100px;
-            position: fixed;
-        }
-        #logo-and-menu img{
-            width: 100px;
-            height: 100px;
+            padding-top: 200px;
+            text-align: center;
             color: white;
         }
-        #logo-and-menu .menu{
-            text-transform: uppercase;
-            color: white;
-            padding: 8px;
-            cursor: pointer;
+        .login{
+            padding: 10px;
         }
-        #logo-and-menu a{
-            margin-top: 42px;
-            color: white;
-            text-decoration: none;
-            padding-top: 50px;
-            padding-left: 28px;
-            padding-bottom: 40px;
+        #btn-box{
+            padding-top: 20px;
+        }
+        #btn-box .buttn{
+            background-color: rgb(175, 0, 255);
+            border: 5px solid rgb(175, 00, 255);
+            padding-left: 20px;
             padding-right: 20px;
-        }
-        #title h1{
-            text-align: left;
-            padding-top: 324px;
-            padding-bottom: 10px;
-            padding-left: 70px;
-            padding-right: 30px;
-            font-weight: 150;
-            font-size: 50px;
-            text-transform: uppercase;
-            color: white;
-        }
-        #button{
-            padding-left: 70px;
-        }
-        #button .button.primary {
-            color: white;
-            background: #e67e22;
-            border: 2px solid #e67e22;
-            border-radius: 99px;
-            padding: 20px;
+            border-radius: 10px;
             cursor: pointer;
-            font-size: 14.5px;
-        }
-        #button .button.secondary {
-            color: #e67e22;
-            background: transparent;
-            border: 2px solid #e67e22;
-            padding: 20px;
-            border-radius: 99px;
-            font-size: 14.5px;
-        }
-        .footfat{
-            margin: auto;
-        }
-        .foodfat h1{
-            text-transform: uppercase;
-            font-size: 30px;
-            text-align: center;
-        }
-        .foodfat p{
-            gap: 24px;
-            text-align: center;
-        }
-        .parts{
-            display: flex;
-        }
-        .parts h3{
-            font-weight: 100;
-            padding: 10px;
-            text-transform: uppercase;
-        }
-        .parts p{
-            padding-right: 15px;
-        }
-
-        .grid{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            padding-top: 48px;
-        }
-        .grid img{
-            width: 324px;
-            height: auto;
-        }
-        .cities{
-            text-align: center;
-            padding-top: 65px;
-            padding-bottom: 30px;
-            text-transform: uppercase;
-            font-size: 20px;
-        }
-        .place-to-eat{
-            display: flex;
-            align-items: center;
-            padding: 10px;
-        }
-        .place-to-eat img{
-            width: 100%;
-            height: auto;
-            margin-bottom: 15px;
-            border-style: none;
-        }
-        .place-to-eat h3{
-            font-size: 20px;
-            text-transform: uppercase;
-        }
-        .place-to-eat p{
-            font-size: 18px;
-        }
-        .place-to-eat a{
-            font-size: 18px;
-            color: #e67e22;
-            text-decoration: none;
-            padding-bottom: 1px;
-            border-bottom: 1px solid #e67e22;
-        }
-        .cost{
-            display: flex;
-            align-items: center;
-            padding-top: 50px;
-            background-color: #f4f4f4;
-            justify-content: space-between;
-            padding: 150px;
-        }
-        .cost .premium .price1{
-            margin-bottom: 10px;
-            font-weight: 100;
-            color: #e67e22;
-            font-size: 260%;
-            display: table;
-        }
-        .cost .premium .price1 span{
-            font-size: 20px;
-        }
-        .cost .premium p{
-            font-size: 20px;
-        }
-        .cost .button{
-            padding-left: 70px;
-        }
-        .cost .button .btn-primary{
-            color: white;
-            background: #e67e22;
-            border: 2px solid #e67e22;
-            border-radius: 99px;
-            padding: 20px;
-            cursor: pointer;
-            font-size: 14.5px;
-        }
-        .cost .pro .price2{
-            margin-bottom: 10px;
-            font-weight: 100;
-            color: #e67e22;
-            font-size: 260%;
-        }
-        .cost .pro .price2 span{
-            font-size: 20px;
-        }
-        .cost .pro p{
-            font-size: 20px;
-        }
-        .cost .button2{
-            padding-left: 70px;
-        }
-        .cost .button2 .btn-secondary{
-            color: #e67e22;
-            background: transparent;
-            border: 2px solid #e67e22;
-            padding: 20px;
-            border-radius: 99px;
-            font-size: 14.5px;
-        }
-        .cost .starter .price3{
-            margin-bottom: 10px;
-            font-weight: 100;
-            color: #e67e22;
-            font-size: 260%;
-        }
-        .cost .starter .price3 span{
-            font-size: 20px;
-        }
-        .cost .starter p{
-            font-size: 20px;
-        }
-        .cost .button3{
-            padding-left: 70px;
-        }
-        .cost .button3 .btn-secondary{
-            color: #e67e22;
-            background: transparent;
-            border: 2px solid #e67e22;
-            padding: 20px;
-            border-radius: 99px;
-            font-size: 14.5px;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
- <div id="first-container">
-    <header id="logo-and-menu">
-        <img src="http://www.omnifood.net/resources/CSS/img/logo.png" alt="">
-        <div class="menu">
-                <a href=""> Food Delivery</a>
-                <a href="">Home It Works</a>
-                <a href="">Our Cities</a>
-                <a href="">Sign up</a>
+    <header id="clock">
+        <div>
+            <span id="hours"></span>
+            <span>:</span>
+            <span id="minus"></span>
+            <span>:</span>
+            <span id="second"></span>
+        </div>
+        <div>
+            <span id="day"></span>
+            <span>-</span>
+            <span id="month"></span>
+            <span>-</span>
+            <span id="year"></span>
         </div>
     </header>
-    <section>
-        <div id="title">
-            <h1>Goodbye junk food. <br> Hello supper healthy meals.</h1>
-        </div>
-        <div id="button">
-            <button class="button primary">
-                I'm hungry
-            </button>
-            <button class="button secondary">
-                Show me more
-            </button>
-        </div>
-    </section>
-</div>
-    <section>
-        <div class="foodfat">
-            <h1>
-                Get food fat - Not fat food
-            </h1>
-            <p>Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. <br> No time for cooking. So let us take care of that, we're really good at it, we promise! </p>
-        </div>
-        <div class="parts">
+    <div class="background">
+        <h1>Nhập thông tin</h1>
+        <div class="login">
             <div>
-                <h3>Up to 365 days/year</h3>
-                <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.</p>
+                <h4>Họ và tên</h4>
+                <input type="text" id="name" name="ten" placeholder="Nhập tên">
             </div>
             <div>
-                <h3>Ready in 20 minutes</h3>
-                <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.</p>
-            </div>
-            <div>
-                <h3>100% organic</h3>
-                <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!</p>
-            </div>
-            <div>
-                <h3>Order anything</h3>
-                <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
+                <h4>Tuổi</h4>
+                <input type="text" id="age" name="tuoi" placeholder="Nhập tuổi">
             </div>
         </div>
-    </section>
-    <section>
-        <div class="grid">
-            <img src="http://www.omnifood.net/resources/images/1.jpg" alt="">
-            <img src="http://www.omnifood.net/resources/images/2.jpg" alt="">
-            <img src="http://www.omnifood.net/resources/images/3.jpg" alt="">
-            <img src="http://www.omnifood.net/resources/images/4.jpg" alt="">
-
-            <img src="http://www.omnifood.net/resources/images/5.jpg" alt="">
-            <img src="http://www.omnifood.net/resources/images/6.jpg" alt="">
-            <img src="http://www.omnifood.net/resources/images/7.jpg" alt="">
-            <img src="http://www.omnifood.net/resources/images/8.jpg" alt="">
-        </div>
-    </section>
-    <section>
-        <div class="cities">
-            <h1>We're currently in these cities</h2>
-        </div>
-        <div class="place-to-eat">
-            <div>
-                <img src="http://www.omnifood.net/resources/images/lisbon-3.jpg" alt="">
-                <h3>Lisbon</h3>
-                <p>1600+ happy eaters</p>
-                <p>60+ top chefs</p>
-                <a href="">@omnifood ix</a>
+            <div id="btn-box">
+                <button onclick="myFuntion()" class="buttn" >
+                Gửi
+                </button>
             </div>
-            <div>
-                <img src="http://www.omnifood.net/resources/images/san-francisco.jpg" alt="">
-                <h3>San Francisco</h3>
-                <p>3700+ happy eaters</p>
-                <p>160+ top chefs</p>
-                <a href="">@omnifood_sf</a>
-            </div>
-            <div>
-                <img src="http://www.omnifood.net/resources/images/berlin.jpg" alt="">
-                <h3>Berlin</h3>
-                <p>2300+ happy eaters</p>
-                <p>110+ top chefs</p>
-                <a href="">@omnifood_berlin</a>
-            </div>
-            <div>
-                <img src="http://www.omnifood.net/resources/images/london.jpg" alt="">
-                <h3>London</h3>
-                <p>1200+ happy eaters</p>
-                <p>50+ top chefs</p>
-                <a href="">@omnifood_london</a>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="cost">
-            <div class="premium">
-                    <h2>PREMIUM</h2>
-                    <p class="price1">"$399" <span>/ month</span></p>
-                    <p>That's only 13.30$ per meal</p>
-                    <p>1 meal every day</p>
-                    <p>Order 24/7</p>
-                    <p>Access to newest creations</p>
-                    <p>Free delivery</p>
-                    <div class="button">
-                        <button class="btn-primary">Sign up now</button>
-                    </div>
-            </div>
-            <div class="pro">
-                    <h2>PRO</h2>
-                    <p class="price2">"$149" <span>/ month</span></p>
-                    <p>That's only 14.90$ per meal</p>
-                    <p>1 meal 10 days/month</p>
-                    <p>Order 24/7</p>
-                    <p>Access to newest creations</p>
-                    <p>Free delivery</p>
-                <div class="button2">
-                        <button class="btn-secondary">Sign up now</button>
-                </div>
-            </div>
-            <div class="starter">
-                    <h2>STARTER</h2>
-                    <p class="price3">"19$ " <span>/ month</span></p>
-                    <p>1 meal</p>
-                    <p>Order from 8 am to 12 pm</p>
-                    <p>Free delivery</p>
-                <div class="button3">
-                        <button class="btn-secondary">Sign up now</button>
-                </div>
-            </div>
-        </div>
-    </section>
 </body>
 </html>

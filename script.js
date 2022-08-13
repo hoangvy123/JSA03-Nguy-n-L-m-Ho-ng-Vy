@@ -15,18 +15,24 @@ function myTimer() {
   document.getElementById("clock").innerHTML = date.toLocaleTimeString();
 }
 
-
-
-
-function myFunction(){
+function myFuntion(){
     const ten=document.getElementById('name').value;
     const tuoi=document.getElementById('age').value;
-    window.localStorage.setItem('name', ten);
-    window.localStorage.setItem('age', tuoi);
+    sessionStorage.setItem('name', ten.value)
+    sessionStorage.setItem('age', tuoi.value)
+    var isSuccess = confirm('Lưu thông tin thành công! Quay về trang chủ')
+        if(isSuccess){
+            window.location.href ='bkt4.html'
+        }
+   }
+function clearInfor(){
+    const ten=sessionStorage.clear('name');
+    const tuoi=sessionStorage.clear('age');
+    alert('Đã xóa thông tin')
 }
 function checkInfo(){
-    const name = localStorage.getItem('name')
-    const age = localStorage.getItem('age')
+    const name = sessionStorage.getItem('name')
+    const age = sessionStorage.getItem('age')
     if(age && name){
         alert('Name:' + name + 'Age:' + age)
     }else{
