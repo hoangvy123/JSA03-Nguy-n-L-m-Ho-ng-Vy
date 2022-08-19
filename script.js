@@ -1,41 +1,28 @@
-function clock(){
-    var timer = new Date();
-    var hour = timer.getHours();
-    var minute = timer.getMinutes();
-    var second = timer.getSeconds();
-    var day = timer.getDay();
-    var month = timer.getMonth();
-    var year = timer.getFullYear();
+//Bài 1
+var student = {
+    name:'Lan',
+    age: 20,
+    address: '23 Le Loi street'
+  }
+  function Profile(name, age, address){
+    var result = name + ' ' + age + ' ' + 'tuoi'+ ' ' + 'o' + ' ' + address 
+    return result;
+  }
+  console.log(Profile(student.name, student.age, student.address))
+  //Bài 2
+  var smartPhones = [ 
+    { name: 'iphone', price: 649 }, 
+    { name: 'Galaxy S6', price: 576 }, 
+    { name: 'Galaxy Note 5', price: 489 } 
+];
+  console.log(smartPhones.map(smartPhone => smartPhone.price)); 
+  //Bài 3 
 
-}
-setInterval(myTimer, 1000);
+ var foo = (x, y, z) => {console.log( x, y, z )};
 
-function myTimer() {
-  const date = new Date();
-  document.getElementById("clock").innerHTML = date.toLocaleTimeString();
-}
+ var foo = () =>{ alert('Hello')};
 
-function myFuntion(){
-    const ten=document.getElementById('name').value;
-    const tuoi=document.getElementById('age').value;
-    sessionStorage.setItem('name', ten.value)
-    sessionStorage.setItem('age', tuoi.value)
-    var isSuccess = confirm('Lưu thông tin thành công! Quay về trang chủ')
-        if(isSuccess){
-            window.location.href ='bkt4.html'
-        }
-   }
-function clearInfor(){
-    const ten=sessionStorage.clear('name');
-    const tuoi=sessionStorage.clear('age');
-    alert('Đã xóa thông tin')
-}
-function checkInfo(){
-    const name = sessionStorage.getItem('name')
-    const age = sessionStorage.getItem('age')
-    if(age && name){
-        alert('Name:' + name + 'Age:' + age)
-    }else{
-        alert('Không có thông tin')
-    }
-}
+ var foo = (a,b) => {return a+b*100}
+
+
+ 
