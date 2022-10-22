@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./dangnhap.js"> </script>
+    <title>Neufchatel</title>
+    <style>
+        body{
+            background-color: #FAF0E6;
+            font-family: 'Dosis', sans-serif;
+            font-family: 'Raleway', sans-serif;
+        }
+         #first-container{
+            height: 16vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .title{
+            color:rgba(122, 63, 63, 0.7);
+            text-align: center;
+            font-family: 'Cormorant SC', serif;
+            font-size: 24px;
+        }
+        #logo-and-menu .menu{
+            background-color:  #b15a3fe7;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 320px;
+            padding-right: 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        #logo-and-menu .menu a{
+            color: #e99f82 ;
+            font-size: 18px;
+        }
+        #logo-and-menu img{
+            width: 100px;
+            height: 100px;
+            color: rgb(190, 130, 89);
+        }
+        .nen{
+            padding-left: 50px;
+            padding-top: 160px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .box{
+            background-color: #e99f828f;
+            text-align: right;
+        }
+        .cities{
+            padding-top: 65px;
+            padding-bottom: 30px;
+            font-size: 20px;
+            color: #523023;
+            height: 110%;
+        }
+        .cities h2{
+            font-size: 20px;
+        }
+        .nguyenlieu{
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+        .place-to-eat{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            padding-bottom: 100px;
+        }
+        .place-to-eat img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-style: none;
+            width: 400px;
+        }
+        .place-to-eat h3{
+            font-size: 20px;
+        }
+        .place-to-eat p{
+            font-size: 18px;
+        }
+        .lienhe{
+            background-color: rgba(43, 31, 31, 0.788);
+            font-size: 18px;
+            text-align: center;
+            width: 100.5%;
+        }
+        .anvat{
+            padding-left: 40px;
+            padding-right: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .anvat h2{
+            font-size: 20px;
+            color: #523023;
+        }
+        .anvat p{
+            font-size: 16px;
+            color: grey;
+        }
+        .eatclean{
+            margin: 5px 50px 5px 50px;
+        }
+        
+        @media (min-width: 500px) {
+  .nguyenlieu { grid-template-columns: repeat(1, 1fr); }
+}
+.anvat { grid-template-columns: repeat(1, 1fr); }
+@media (min-width: 900px) {
+  .nguyenlieu { grid-template-columns: repeat(3, 1fr); }
+}
+.anvat{ grid-template-columns: repeat(3, 1fr); }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Neufchatel</h1>
+    </div>
+    <div id="first-container">
+        <header id="logo-and-menu">
+            <div id="background">
+                    <div class="menu">
+                        <a href="btcuoikhoa.html"> <i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+                        <a href="gioithieu.html"> <i class="fa fa-list" aria-hidden="true"></i> Giới thiệu</a>
+                        <a href="meo.html"><i class="fa fa-forward" aria-hidden="true"></i> Mẹo</a>
+                        <a href="Côngthức.html"> <i class="fa fa-book" aria-hidden="true"></i> Công thức</a>
+                        <a href="dangnhap.html"> <i class="fa fa-user-o" aria-hidden="true"></i> Đăng nhập</a>
+                        <div class="box">
+                            <div class="container-1">
+                                <span class="icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                <input type="search" id="search" placeholder="Search..." />
+                            </div>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <div class="carousel-inner">
+      
+            <div class="item active">
+              <img src="https://blog.myfitnesspal.com/wp-content/uploads/2017/12/Essential-Guide-to-Healthy-Eating-2.png" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+                <h2 style="color: black;">Eat healthy!</h2>
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="https://cdn.shopify.com/s/files/1/0458/0969/6936/t/4/assets/healthy-eating-habits-banner-1-1652776511179.png?v=1652776531" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+                <h2 style="color: black;">Try to eat healthy!</h2>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="https://assets.gqindia.com/photos/60816771071aa8b0d84289cf/16:9/w_2560%2Cc_limit/50-super-healthy-foods.jpg" alt="New York" style="width:100%;">
+              <div class="carousel-caption">
+                <h2 style="color: black;">Eat healthy is always so much fun!</h2>
+              </div>
+            </div>
+        
+          </div>
+      
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    <section class="eatclean">
+        <div class="cities" >
+            <h1>Có rất nhiều người đang eat clean.</h1>
+            <h2>Những nguyên liệu luôn xuất hiện trong thực đơn eat clean.</h2>
+        </div>
+        <div class="place-to-eat">
+            <div class="nguyenlieu" style="display: grid; padding-top: 30px;">
+                <div style="padding-right: 26px; padding-left: 20px;">
+                    <img src="https://media.vneconomy.vn/images/upload/2021/04/21/yen1-1566291807477584495018-15662918281851332931583.png" alt="">
+                    <h3 >Yến mạch</h3>
+                    <p>Là một loại ngũ cốc nguyên hạt chứa nguồn chất<br>xơ dồi dào.</p>
+                    <p>Có rất nhiều tác dụng tốt cho <br> sức khỏe.</p>
+                </div>
+                <div style="padding-right: 26px; padding-left: 20px;">
+                    <img src="https://songmanhkhoe.vn/wp-content/uploads/2019/09/anh-11-1.jpg" alt="">
+                    <h3>Gạo lứt</h3>
+                    <p>Là loại gạo chỉ được xay thô để loại bỏ vỏ trấu,<br> giữ nguyên lớp cám và phôi mầm bên trong.</p>
+                    <p>Chứa nhiều chất dinh dưỡng hơn các loại gạo trắng,<br> cụ thể là các Vitamin và khoáng chất.</p>
+                </div>
+                <div style="padding-right: 26px; padding-left: 20px;">
+                    <img src="https://img.meta.com.vn/Data/image/2020/10/20/mon-ngon-tu-uc-ga-giup-giam-can-nhanh-chong-9.jpg" alt="">
+                    <h3>Ức gà</h3>
+                    <p>Là phần thịt màu trắng nằm phía trước và xung quanh <br>ngực của con gà.</p>
+                    <p>Giàu chất dinh dưỡng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="anvat">
+        <div style="padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.822); border: 5px solid #FAF0E6; padding-left: 10px;">
+            <img style="width:320px; padding-left: 40px; padding-top: 20px;" src="https://anvathealthy.vn/wp-content/uploads/2021/09/freshly-made-vegetable-juices-carrot-beet-vegetari-PFN3CGR.jpg" alt="">
+            <h2>Top 10 đồ ăn vặt healthy cho dân văn phòng dễ làm</h2>
+            <p>Đồ ăn vặt healthy cho dân văn phòng là phương thức đơn giản để vừa làm giảm cơn đói vừa không gây tăng cân. Món ăn vặt nào dễ chế biến có thể thực hiện ngay nơi công sở mà không tốn nhiều thời gian? […]</p>
+            <a href="vanphong.html"><button class="btn1" style="color: rgb(255, 255, 255);
+                background-color: rgb(189, 77, 62);
+                border: 5px solid rgb(189, 77, 62);
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 24px;
+                cursor: pointer;
+                font-size: 14px;
+                width: 120px;">Read more</button></a>
+        </div>
+        <div style="padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.822);border: 5px solid #FAF0E6;padding-left: 10px;">
+            <img  src="https://anvathealthy.vn/wp-content/uploads/2021/07/a9.jpg" alt="" style="width:320px;padding-top: 20px;" padding-left: 40px;">
+            <h2>Ăn vặt healthy giảm cân an toàn cùng các loại hạt</h2>
+            <p>Ăn vặt healthy đang dần trở thành xu hướng mới nhằm giữ dáng, bảo vệ sức khỏe con người. Thậm chí không chỉ phái nữ mà cánh mày râu cũng áp dụng chế đồ ăn healthy. Chế độ ăn healthy là gì? Đồ ăn vặt […]</p>
+            <a href="anvat"><button class="btn1" style="color: rgb(255, 255, 255);
+                background-color: rgb(189, 77, 62);
+                border: 5px solid rgb(189, 77, 62);
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 24px;
+                cursor: pointer;
+                font-size: 14px;
+                width: 120px;" >Read more</button></a>
+        </div>
+        <div style="padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.822); border: 5px solid #FAF0E6;padding-left: 10px;">
+            <img src="https://anvathealthy.vn/wp-content/uploads/2021/07/a7.jpg" alt="" style="width:320px;padding-top: 20px;" padding-left: 40px;">
+            <h2>Đánh giá tiềm năng của xu hướng kinh doanh ăn vặt healthy</h2>
+            <p>Xu hướng kinh doanh ăn vặt healthy đang dần trở nên phổ biến hơn trong khoảng vài năm trở lại đây. Nhu cầu của người tiêu dùng tăng, thị trường rộng mở góp phần đẩy mạnh tiềm năng phát triển cho xu hướng kinh doanh […]</p>
+            <a href="tiemnang.html"><button class="btn1" style="color: rgb(255, 255, 255);
+                background-color: rgb(189, 77, 62);
+                border: 5px solid rgb(189, 77, 62);
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 24px;
+                cursor: pointer;
+                font-size: 14px;
+                width: 120px;">Read more</button></a>
+        </div>
+        <div style="padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.822); border: 5px solid #FAF0E6;padding-left: 10px;">
+            <img src="https://anvathealthy.vn/wp-content/uploads/2021/07/a5.jpg" alt="" style="width:320px;padding-top: 20px;" padding-left: 40px;">
+            <h2>Lầm tưởng có thể bạn chưa biết về chế độ ăn Eat Clean</h2>
+            <p>Chế độ ăn Eat Clean đang dần trở thành xu hướng mới nhằm đem đến cuộc sống lành mạnh, cải thiện sức khỏe cho con người. Trong thời điểm dịch bệnh hoành hành từ năm 2019 đến nay thì chế độ ăn này càng được […]</p>
+            <a href="lamtuong.html"><button class="btn1" style="color: white;
+                background-color: rgb(189, 77, 62);
+                border: 5px solid rgb(189, 77, 62);
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 24px;
+                cursor: pointer;
+                font-size: 14px;
+                width: 120px;">Read more</button></a>
+        </div>
+        <div style="padding-bottom: 10px; background-color: rgba(255, 255, 255, 0.822); border: 5px solid #FAF0E6;padding-left: 10px;">
+            <img src="https://anvathealthy.vn/wp-content/uploads/2021/07/a1.jpg" alt="" style="width:320px;padding-top: 20px;" padding-left: 40px;">
+            <h2>Tổng hợp 10 món ăn vặt giữ dáng hiệu quả cho chị em</h2>
+            <p>Ăn vặt healthy là xu hướng mới thời hiện đại nhằm giúp các chị em giữ vóc dáng thon gọn mà vẫn cung cấp đủ dưỡng chất cho cơ thể. Phái nữ hoàn toàn có thể biến đổi đa dạng món ăn mà không gây […]</p>
+            <a href="giudang.html"><button class="btn1" style="color: rgb(255, 255, 255);
+                background-color: rgb(189, 77, 62);
+                border: 5px solid rgb(189, 77, 62);
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 24px;
+                cursor: pointer;
+                font-size: 14px;
+                width: 120px;">Read more</button></a>
+        </div>
+    </div>
+    <footer>
+        <div class="lienhe" style="color:#3a2d27;">
+            <h2 style="color: white;">Liên hệ</h2>
+            <a href="https://www.facebook.com/profile.php?id=100028637079506" style="color: rgb(179, 120, 97);"> <p><i class="fa fa-facebook" aria-hidden="true"></i>  Facebook </p></a>
+            <a href="https://www.instagram.com/nguyenlamhoangvy/" style="color: rgb(175, 118, 95);"><p><i class="fa fa-instagram" aria-hidden="true"></i>   Instagram</p></a>
+            <p style="color:#e99f82;">Số điện thoại: 0988 774 818</p>
+            <p style="color:#e99f82;">Địa chỉ email: hoangvy.tn08@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

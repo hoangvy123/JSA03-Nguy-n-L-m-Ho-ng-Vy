@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Dosis', sans-serif;
+font-family: 'Raleway', sans-serif;
+            background-color: #e99f82;
+}
+#logo-and-menu .menu{
+            background-color:  #b15a3fe7;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 360px;
+            padding-right: 100px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        #logo-and-menu .menu a{
+            color: #e99f82 ;
+            font-size: 16px;
+        }
+a {
+color: #92543b;
+}
+* {
+box-sizing: border-box;
+}
+.register {
+width: 500px;
+padding: 16px;
+margin: 0 auto;
+background-color: #fce8df;
+border-radius: 16px;
+}
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #ffffff;
+}
+input[type=text]:focus, input[type=password]:focus {
+background-color: #e99f82;
+outline: none;
+}
+hr {
+margin-bottom: 20px;
+}
+.submit {
+background-color: #d18162;
+border-radius: 24px;
+color: white;
+padding: 15px 18px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+.submit:hover {
+opacity: 1;
+}
+.login {
+background-color: #ffffff;
+text-align: center;
+}
+    </style>
+</head>
+<body>
+   
+    <div id="first-container">
+        <header id="logo-and-menu">
+            <div id="background">
+                    <div class="menu">
+                        <a href="btcuoikhoa.html"> <i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+                        <a href="gioithieu.html"> <i class="fa fa-list" aria-hidden="true"></i> Giới thiệu</a>
+                        <a href="meo.html"><i class="fa fa-forward" aria-hidden="true"></i> Mẹo</a>
+                        <a href="Côngthức.html"> <i class="fa fa-book" aria-hidden="true"></i> Công thức</a>
+                        <a href="dangnhap.html"> <i class="fa fa-user-o" aria-hidden="true"></i> Đăng nhập</a>
+            </div>
+    </header>
+</div>
+    <div class="dangki" >
+        <form>
+        <div class="register">
+        <h1 style="font-weight: 100;">Đăng ký</h1>
+        <hr>
+        <label><b>Tên đăng nhập</b></label>
+        <input type="text" placeholder="Email" name="username" id="username">
+        <p style="color: rgba(223, 9, 9, 0.767);" id="usernameCheck">Hãy điền tên đăng nhập!</p>
+        <label><b>Mật khẩu</b></label>
+        <input type="password" placeholder="******" name="password" id="password">
+        <p style="color: rgba(223, 9, 9, 0.767);" id="passwordCheck">Hãy điền mật khẩu!</p>
+        <hr>
+        <p style="font-weight: 5;">Đăng kí để nhận thông báo về bài viết mới.</p>
+        <a href="dangnhap.html"><button id="btn-signup" type="submit" class="submit">Đăng ký</button></a>
+        <p style="color: rgba(223, 9, 9, 0.767);" id="signUpCheck">Email đã được đăng nhập!</p>
+        </div>
+        <div class="register login">
+        <p >Bạn đã có tài khoản rồi? <a href="dangnhap.html" onclick="myFuntion()">Đăng nhập</a>.</p>
+        </div>
+        </form>
+    </div>
+    <script>
+        var isvalid = false
+        var userNameValid = false
+        var passwordValid = false
+                  $("#signUpCheck").hide()
+        $("#usernameCheck").hide()
+        $("#passwordCheck").hide()
+        $("#btn-signup").prop("disabled",true)
+        $("#username").keyup(() =>
+        {
+        if($("#username").val().length < 3){
+            $("#usernameCheck").show()
+            userNameValid = false
+
+        }else{
+            $("#usernameCheck").hide()
+            userNameValid = true
+        }
+        if(userNameValid == true && passwordValid == true){
+                $("#btn-signup").prop("disabled",false)
+
+            }else{
+            $("#btn-signup").prop("disabled",true)
+
+            }
+
+    })
+    
+    $("#password").keyup(() =>
+        {
+        if($("#password").val().length < 3){
+            $("#passwordCheck").show()
+            passwordValid = false
+
+            
+        }else{
+            $("#passwordCheck").hide()
+            passwordValid = true
+            
+        }
+        if(userNameValid == true && passwordValid == true){
+            $("#btn-signup").prop("disabled",false)
+            
+        }else{
+            $("#btn-signup").prop("disabled",true)
+
+        }
+    })
+    
+    $("#btn-signup").click(() =>
+    {
+        var b = []
+        var username = $("#username").val()
+        var password = $("#password").val()
+        if(localStorage.getItem("users") != null)
+        {
+            b = JSON.parse(localStorage.getItem("users"))
+            for(i= 0; i < b.length; i++ ){
+                if(b[i].username == username){
+                  $("#signUpCheck").show()
+                    return
+                }
+            }
+        }
+        
+        b.push({
+            username: username,
+            password:password
+        })
+        
+        window.localStorage.setItem("users",JSON.stringify(b))
+        window.location.replace("http://127.0.0.1:5500/baitapcuoikhoa/dangnhap.html")   
+        
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Dosis', sans-serif;
+font-family: 'Raleway', sans-serif;
+        }
+        #first-container{
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(41, 71, 73, 0.404)), url('https://images.foody.vn/res/g107/1061950/prof/s576x330/file_restaurant_photo_ft2i_16591-f06a50dc-220730212057.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        #logo-and-menu .menu{
+            background-color:  #b15a3f9f;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 360px;
+            padding-right: 100px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        #logo-and-menu .menu a{
+            color: #e99f82 ;
+            font-size: 16px;
+        }
+        section{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }   
+        section .img-bg{
+            position: relative;
+            width: 50%;
+            height: 100%;
+        }
+        section .img-bg img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+         section .noi-dung{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+        }
+         section .noi-dung .form{
+            width: 50%;
+        }
+        section .noi-dung .form h2{
+        color: #607d8b;
+        font-weight: 500;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        border-bottom: 4px solid #b15a3fe7;
+        display: inline-block;
+        letter-spacing: 1px;
+        }
+        section .noi-dung .form .input-form{
+     margin-bottom: 20px;
+ }
+section .noi-dung .form .input-form span{
+     font-size: 16px;
+     margin-bottom: 5px;
+     display: inline-block;
+     color: #607db8;
+     letter-spacing: 1px;
+      }
+section .noi-dung .form .input-form input{
+     width: 100%;
+     padding: 10px 20px;
+     outline: none;
+     border: 1px solid #607d8b;
+     font-size: 16px;
+     letter-spacing: 1px;
+     color: #607d8b;
+     background: transparent;
+     border-radius: 30px;
+     }
+ section .noi-dung .form .input-form input[type="submit"]{
+     background: #b15a3fe7;
+     color: #fff;
+     outline: none;
+     border: none;
+     font-weight: 500;
+     cursor: pointer;
+     box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+                0 2px 2px rgba(0,0,0,0.12),
+                0 4px 4px rgba(0,0,0,0.12),
+               0 8px 8px rgba(0,0,0,0.12),
+               0 16px 16px rgba(0,0,0,0.12);
+ }
+section .noi-dung .form .input-form input[type="submit"]:hover{
+     background: #b15a3fe7;
+ }
+ section .noi-dung .form .nho-dang-nhap{
+     margin-bottom: 10px;
+     color: #607d8b;
+     font-size: 14px;
+ }
+ section .noi-dung .form .input-form p{
+     color: #607d8b;
+ }
+section .noi-dung .form .input-form p a{
+     color: #ac3f3f;
+ }
+ section .noi-dung .form h3{
+     color: #607d8b;
+     text-align: center;
+     margin: 80px 0 10px;
+     font-weight: 500;
+ }
+section .noi-dung .form .icon-dang-nhap{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+section .noi-dung .form .icon-dang-nhap li{
+     list-style: none;
+     cursor: pointer;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ section .noi-dung .form .icon-dang-nhap li:nth-child(1){
+     color: #3b5999;
+ }
+ section .noi-dung .form .icon-dang-nhap li:nth-child(2){
+     color: #dd4b39;
+ }
+ section .noi-dung .form .icon-dang-nhap li:nth-child(3){
+     color: #55acee;
+ }
+ section .noi-dung .form .icon-dang-nhap li i{
+     font-size: 24px;
+ }
+
+        </style>
+</head>
+<body>
+    <div id="first-container">
+        <header id="logo-and-menu">
+            <div id="background">
+                    <div class="menu">
+                        <a href="btcuoikhoa.html"> <i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+                        <a href="gioithieu.html"> <i class="fa fa-list" aria-hidden="true"></i> Giới thiệu</a>
+                        <a href="meo.html"><i class="fa fa-forward" aria-hidden="true"></i> Mẹo</a>
+                        <a href="Côngthức.html"> <i class="fa fa-book" aria-hidden="true"></i> Công thức</a>
+                        <a href="dangnhap.html"> <i class="fa fa-user-o" aria-hidden="true"></i> Đăng nhập</a>
+            </div>
+    </header>
+</div>
+<section>
+    <div class="noi-dung" style="padding-top: 20px ; padding-left: 300px; ">
+        <div class="form">
+            <h2>Trang Đăng Nhập</h2>
+            <form action="">
+                <div class="input-form">
+                    <span>Tên Người Dùng</span>
+                    <input type="text" id="ten" name="">
+                    <p id="usernameCheck" style="color: red;">*Chưa điền tên đăng nhập.</p>
+                </div>
+                <div class="input-form">
+                    <span>Mật Khẩu</span>
+                    <input type="password" id="matkhau" name="">
+                    <p id="passwordCheck" style="color: red;">*Chưa điền mật khẩu.</p>
+                </div>
+                <div class="nho-dang-nhap">
+                    <label><input type="checkbox" name=""> Nhớ Đăng Nhập</label>
+                </div>
+                <a href="btcuoikhoa.html"><div class="input-form">
+                    <button id="btn-signup" style="color: rgba(255, 255, 255, 0.637);
+                    background-color: rgb(206, 78, 78);
+                    border: 5px solid rgb(206, 78, 78);
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    border-radius: 24px;
+                    cursor: pointer;
+                    font-size: 20px;
+                    font-weight: 200;
+                    width: 300px;
+                    height: 46px;
+                    font-family: 'Roboto', sans-serif;" type="submit" >Đăng Nhập</button>
+                    </a>
+                </div>
+                <div class="input-form">
+                    <p>Bạn Chưa Có Tài Khoản? <a href="dangki.html">Đăng Ký</a></p>
+                </div>
+            </form>
+            <h3>Đăng Nhập Bằng Mạng Xã Hội</h3>
+            <ul class="icon-dang-nhap">
+                <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </div>
+    
+</section>
+<script>
+            var isvalid = false
+        var userNameValid = false
+        var passwordValid = false
+                  $("#signUpCheck").hide()
+        $("#usernameCheck").hide()
+        $("#passwordCheck").hide()
+        $("#btn-signup").prop("disabled",true)
+        $("#ten").keyup(() =>
+        {
+        if($("#ten").val().length < 3){
+            $("#usernameCheck").show()
+            userNameValid = false
+
+        }else{
+            $("#usernameCheck").hide()
+            userNameValid = true
+        }
+        if(userNameValid == true && passwordValid == true){
+                $("#btn-signup").prop("disabled",false)
+
+            }else{
+            $("#btn-signup").prop("disabled",true)
+
+            }
+
+    })
+    
+    $("#matkhau").keyup(() =>
+        {
+        if($("#matkhau").val().length < 3){
+            $("#passwordCheck").show()
+            passwordValid = false
+
+            
+        }else{
+            $("#passwordCheck").hide()
+            passwordValid = true
+            
+        }
+        if(userNameValid == true && passwordValid == true){
+            $("#btn-signup").prop("disabled",false)
+            
+        }else{
+            $("#btn-signup").prop("disabled",true)
+
+        }
+    })
+    
+    $("#btn-signup").click(() =>
+    {
+        var b = [];
+        var username = $("#ten").val();
+        var password = $("#matkhau").val();
+        if (localStorage.getItem("users") !== null) {
+          b = JSON.parse(localStorage.getItem("users"));
+          for(i = 0; i < b.length ; i++){
+            if(b[i].name === username && b[i].password === password)
+            {
+             let  userSave = {username, password}
+              localStorage.setItem("user",JSON.stringify(userSave) )
+              window.location.replace("btcuoikhoa.html");
+            }
+          }
+        }
+    })
+
+</script>
+</body>
+</html>
